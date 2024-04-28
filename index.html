@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navabar -->
+      <div id="main-container">
+           <div>
+            <label for="">Filter by Department:</label>
+                    <select  id="filter_department">
+                        <option value="">--Select Department--</option>
+                        <option value="hr">hr</option>
+                        <option value="finance">finance</option>
+                        <option value="marketing">marketing</option>
+                        <option value="engineering">engineering</option>
+                         <option value="operations">operations</option>
+                    </select>            
+           </div>
+           <div>
+            <label for="">Filter by Gender:</label>
+                            <select  id="filter_gender">
+                                <option value=""> --Select gender--</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                                <option value="others">others</option>
+                            </select>
+           </div>
+           <div>
+            <label for="">Sort by Salary:</label>
+                            <select  id="filter_salary">
+                                <option value="">--Select order--</option>
+                                <option value="asc">low to high</option>
+                                <option value="desc">high to low</option>
+                            </select>
+           </div>
+      </div>
+
+      <!-- products table-->
+      <div id="table_container">
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Department</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                               <!-- append data -->
+                        </tbody>
+                    </table>
+      </div>
+      <div id="buttons">
+        <button id="previous" >&lt; Previous</button>
+        <button id="next">Next &gt;</button>
+      </div>
+</body>
+</html>
+<script src="script.js"></script>
